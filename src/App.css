@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.circle-of-fifths{
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.outerCircle{
+  position: relative;
+  display: flex;
+  width: 700%;
+  height: 700%;
+  /* border: 3px solid black; */
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  transform-origin: 100% 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.innerCircle{
+  position: absolute;
+  display: flex;
+  width: 500px;
+  height: 500px;
+  /* border: 3px solid black; */
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  transform-origin: 100% 100%;
+}
+
+.outerCircle button{
+  width: 183.250px;
+  height: 100px;
+  clip-path: polygon( 0% 0%, 100% 0%, calc((100% - 130.8995px) / 2 + 130.8995px) 100%, calc((100% - 130.8995px) / 2) 100%);
+  border-top-left-radius: 183.250px 30%;
+  border-top-right-radius: 183.250px 30%;
+  color:black;
+  font-size: 30px;
+  font-weight: 600;
+  border: none;
+
+}
+
+.innerCircle button{
+  width: 130.8995px;
+  height: 243px;
+  clip-path: polygon(0 0, 100% 0,  calc(50% + 0.5px) 100%, calc(50% - 0.5px) 100%);
+  border-top-left-radius: 130.8995px 0%;
+  border-top-right-radius: 130.8995px 0%;
+  color:black;
+  font-weight:600;
+  font-size: 30px;
+  border: none;
+}
+
+.C{
+  position: absolute;
+  transform: rotate(270deg) translate(300px) rotate(-270deg);
+  background-color: #9AC216;
+}
+.G{
+  position: absolute;
+  transform: rotate(300deg) translate(300px) rotate(-270deg);
+  background-color: #C2BD16;
+}
+.D{
+  position: absolute;
+  transform: rotate(330deg) translate(300px) rotate(-270deg);
+  background-color: #C28116;
+}
+.A{
+  position: absolute;
+  transform: rotate(0deg) translate(300px) rotate(-270deg);
+  background-color: #C26716;
+}
+.E{
+  position: absolute;
+  transform: rotate(30deg) translate(300px) rotate(-270deg);
+  background-color: #C21616;
+}
+.B{
+  position: absolute;
+  transform: rotate(60deg) translate(300px) rotate(-270deg);
+  background-color: #C216BA;
+}
+.Gb{
+  position: absolute;
+  transform: rotate(90deg) translate(300px) rotate(-270deg);
+  background-color: #6416C2;
+}
+.Db{
+  position: absolute;
+  transform: rotate(120deg) translate(300px) rotate(-270deg);
+  background-color: #3316C2;
+}
+.Ab{
+  position: absolute;
+  transform: rotate(150deg) translate(300px) rotate(-270deg);
+  background-color: #167EC2;
+}
+.Eb{
+  position: absolute;
+  transform: rotate(180deg) translate(300px) rotate(-270deg);
+  background-color: #16ACC2;
+}
+.Bb{
+  position: absolute;
+  transform: rotate(210deg) translate(300px) rotate(-270deg);
+  background-color: #16C28C;
+}
+.F{
+  position: absolute;
+  transform: rotate(240deg) translate(300px) rotate(-270deg);
+  background-color: #19C216;
+}
+.Am{
+  position: absolute;
+  transform: rotate(270deg) translate(130px) rotate(-270deg);
+  background-color: #9ac216cf;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Em{
+  position: absolute;
+  transform: rotate(300deg) translate(130px) rotate(-270deg);
+  background-color: #c2bc16cf;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Bm{
+  position: absolute;
+  transform: rotate(330deg) translate(130px) rotate(-270deg);
+  background-color: #C28116cf;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Gbm{
+  position: absolute;
+  transform: rotate(0deg) translate(130px) rotate(-270deg);
+  background-color: #C26716cf;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Dbm{
+  position: absolute;
+  transform: rotate(30deg) translate(130px) rotate(-270deg);
+  background-color: #C21616b3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Abm{
+  position: absolute;
+  transform: rotate(60deg) translate(130px) rotate(-270deg);
+  background-color: #C216BAb3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Ebm{
+  position: absolute;
+  transform: rotate(90deg) translate(130px) rotate(-270deg);
+  background-color: #6416C2b3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Bbm{
+  position: absolute;
+  transform: rotate(120deg) translate(130px) rotate(-270deg);
+  background-color: #3316C2b3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Fm{
+  position: absolute;
+  transform: rotate(150deg) translate(130px) rotate(-270deg);
+  background-color: #167EC2b3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Cm{
+  position: absolute;
+  transform: rotate(180deg) translate(130px) rotate(-270deg);
+  background-color: #16ACC2b3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Gm{
+  position: absolute;
+  transform: rotate(210deg) translate(130px) rotate(-270deg);
+  background-color: #16C28Cb3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+.Dm{
+  position: absolute;
+  transform: rotate(240deg) translate(130px) rotate(-270deg);
+  background-color: #19C216b3;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding-top: 10%;
+}
+
+button:hover{
+  opacity: 90%;
+}
+button:active{
+  opacity: 100%;
 }
